@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="formu.css">
+  
+  <link rel="shortcut icon" type="image/jpeg" href="imágenes/pepe.jpg">
+  
+  <title>Inicio de Sesion</title>
+  
+</head>
+
+<body>
+  
+<form action="index.html">
+
+<h2>Ingreso</h2>
+
+<br />	
+	
+<label for="Nombre">Nombre</label>
+<input type="text" name="Nombre" placeholder="nombre" required>
+<br />
+
+<label for="Correo">Correo</label>
+<input type="email" name="Correo" placeholder="correo" required>
+<br />
+
+<label for="Contra">Password</label>
+<input type="password" name="Contra" placeholder="password" required>
+<br />
+
+<label for="Edad">Edad</label>
+<input type="number" name="Edad" id="edad"  placeholder="edad" >
+<br />
+
+<input type="submit" value="Enviar" id="boton" onclick="verify()">
+
+<script type="text/javascript">
+	function verify() { 
+
+var ppp;
+
+lol = Number(document.getElementById("edad").value);
+if (lol<=17) {
+   alert("Debe ser mayor de 18 años");
+ 
+}	
+
+else{
+alert("Acceso permitido, Bienvenido!");	
+  }
+
+ }
+
+</script>
+
+</form>
+
+</body>
+
+</html>
